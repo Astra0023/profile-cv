@@ -1,5 +1,4 @@
 import MainLayout from "../components/MainLayout";
-import { About } from "../pages/about/About";
 import Home from "../pages/home/Home";
 import { createBrowserRouter } from "react-router";
 import { Project } from "../pages/projects/Project";
