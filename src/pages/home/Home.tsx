@@ -3,17 +3,18 @@ const Home = () => {
   return (
     <>
       {/* Profile Section */}
-      <div className="flex items-center justify-between w-full">
-        {/* Name */}
-        <div>
-          <h1 className="capitalize md:uppercase font-bold text-purple-800 text-4xl mt-5">
+      <div className="flex flex-col-reverse md:flex-row items-center md:items-center justify-between w-full gap-6">
+        <div className="text-center md:text-left">
+          <h1 className="capitalize md:uppercase font-bold text-purple-800 text-3xl md:text-4xl mt-5">
             Jhon Carlos Tamba
           </h1>
-          <p className="text-gray-600 text-lg mt-0">Software Engineer II</p>
-          <p className="text-gray-600 text-lg mt-0">
+          <p className="text-gray-600 text-base md:text-lg mt-1">
+            Software Engineer II
+          </p>
+          <p className="text-gray-600 text-base md:text-lg mt-1">
             Pines Peak Barangka Ilaya Mandaluyong City, Philippines
           </p>
-          <p className="text-gray-600 text-lg mt-0">
+          <p className="text-gray-600 text-base md:text-lg mt-1">
             0938-814-3433 |{" "}
             <a
               href="mailto:jhon.carlos.cortez.tamba@gmail.com"
@@ -23,13 +24,12 @@ const Home = () => {
             </a>
           </p>
         </div>
-
-        {/* Image */}
-        <div>
+        {/* Image Section */}
+        <div className="flex justify-center">
           <img
             src={ProfilePicture}
             alt="Profile"
-            className="rounded-full w-48 h-48 object-cover"
+            className="rounded-full w-40 h-40 md:w-48 md:h-48 object-cover"
           />
         </div>
       </div>
